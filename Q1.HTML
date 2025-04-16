@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-container</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            width: 100vh;
+            background-color: aliceblue;
+        }
+        .container{
+            display: grid;
+            height: 50%;
+            width: 70%;
+            gap: 3px;
+            margin-top: 60px;
+            padding: 60px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            color: aliceblue;
+            font-weight: bold;
+        }
+        
+        .item-a{
+            grid-column: 1/2;
+            background-color: rgb(149, 216, 216);
+        }
+        .item-b{
+            grid-column: 2/3;
+            background-color: rgb(236, 158, 129);
+        }
+        .item-c{
+            grid-column: 3/4;
+            background-color: rgb(101, 142, 175);
+        }
+        .item-d{
+            grid-column: 1/2;
+            background-color: rgb(169, 170, 111);
+        }
+        .item-e{
+            grid-column: 2/3;
+            background-color: rgb(126, 120, 183);
+        }
+        .item-f{
+            grid-column: 3/4;
+            background-color: rgb(132, 205, 132);
+        }
+        .item-g{
+            grid-column: 1/2;
+            background-color: rgb(201, 144, 114);
+        }
+        .item-h{
+            grid-column: 2/3;
+            background-color: rgb(128, 195, 195);
+        }
+        .item-i{
+            grid-column: 3/4;
+            background-color : rgb(237, 138, 138);
+        }
+        @media screen and (max-width : 658px){
+            body{
+                display: flex;
+            }
+            .item-a{
+            background-color: rgb(45, 193, 193);
+        }
+        .item-b{
+            background-color: rgb(113, 50, 27);
+        }
+        .item-c{
+
+            background-color: rgb(35, 114, 179);
+        }
+        .item-d{
+        
+            background-color: rgb(163, 165, 28);
+        }
+        .item-e{
+        
+            background-color: rgb(65, 50, 175);
+        }
+        .item-f{
+        
+            background-color: rgb(188, 29, 29);
+        }
+        .item-g{
+        
+            background-color: rgb(160, 75, 29);
+        }
+        .item-h{
+        
+            background-color: rgb(35, 206, 206);
+        }
+        .item-i{
+
+            background-color : rgb(188, 26, 26);
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-a">1.</div>
+        <div class="item item-b">2.</div>
+        <div class="item item-c">3.</div>
+        <div class="item item-d">4.</div>
+        <div class="item item-e">5.</div>
+        <div class="item item-f">6.</div>
+        <div class="item item-g">7.</div>
+        <div class="item item-h">8.</div>
+        <div class="item item-i">9.</div>
+    </div>
+</body>
+</html>
